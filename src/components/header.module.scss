@@ -1,0 +1,67 @@
+$very-dark-blue: hsl(243, 87%, 12%);
+$desaturated-blue: hsl(238, 22%, 44%);
+$bright-blue: hsl(224, 93%, 58%);
+$moderate-cyan: hsl(170, 45%, 43%);
+$light-grayish-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap");
+
+$raleway: "Raleway", "Source Sans Pro", Helvetica, Verdana, sans-serif;
+$open-sans: "Open Sans", Merriweather, Georgia, "Times New Roman", serif;
+
+$normal: 400;
+$bold: 700;
+
+header {
+  margin-bottom: 0.25rem;
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 2.75rem 5rem;
+
+    img {
+      height: 2.8rem;
+    }
+  }
+
+  nav {
+    margin-top: 0;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+
+      a {
+        margin: 0;
+        text-decoration: none;
+        color: $very-dark-blue;
+        letter-spacing: -0.5px;
+        transition: color 0.15s ease-in-out;
+        font-size: 0.95rem;
+
+        &:last-child {
+          li {
+            padding-right: 0;
+          }
+        }
+
+        &:hover {
+          color: $desaturated-blue;
+        }
+
+        li {
+          padding: 0.8rem 1.5rem;
+        }
+      }
+    }
+  }
+}

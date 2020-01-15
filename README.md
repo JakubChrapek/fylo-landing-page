@@ -2,7 +2,7 @@
 
 ## Welcome! 👋
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow. I enjoy using them to test my skills in things I learn. This time it is dedicated to GatsbyJS.
+[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow. I enjoy using them to test my skills in things I learn. This time it is dedicated to [GatsbyJS](https://www.gatsbyjs.org).
 
 ## Where to find everything
 
