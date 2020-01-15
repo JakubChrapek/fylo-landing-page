@@ -22,6 +22,10 @@ header {
     max-width: 1440px;
     padding: 2.75rem 5rem;
 
+    @media (max-width: 550px) {
+      padding: 2rem;
+    }
+
     img {
       height: 2.8rem;
     }

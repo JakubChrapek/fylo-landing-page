@@ -6,16 +6,21 @@ const StyledFrom = styled.form`
   width: 100%;
   max-width: 500px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 `
 
 const StyledInput = styled.input`
   font-size: 0.8rem;
+  min-width: 150px;
   margin-top: 0;
   height: 100%;
   padding: 0.7rem 0.9rem;
   border-radius: 2px;
+  @media (max-width: 1120px) {
+    min-width: 125px;
+  }
 `
 
 const StyledEmail = styled(StyledInput)`
@@ -37,7 +42,7 @@ const StyledEmail = styled(StyledInput)`
 `
 
 const StyledSubmit = styled(StyledInput)`
-  width: 40%;
+  width: calc(40% - 5rem);
   border: 1px solid hsl(224, 93%, 58%);
   color: #fff;
   font-weight: 700;

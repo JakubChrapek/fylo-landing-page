@@ -30,6 +30,7 @@ const StyledInput = styled.input`
   font-size: 0.8rem;
   margin-top: 0;
   height: 100%;
+  min-width: 11rem;
   padding: 0.85rem 0.9rem;
   border-radius: 5px;
   box-shadow: 2px 2px 4px 0px hsl(233, 82%, 25%);
@@ -57,6 +58,7 @@ const EmailInput = styled(StyledInput)`
 
 const SubmitInput = styled(StyledInput)`
   width: 40%;
+  
   border: 1px solid hsl(224, 93%, 58%);
   margin-top: 1rem;
   color: #fff;

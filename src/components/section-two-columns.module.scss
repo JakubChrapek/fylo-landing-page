@@ -12,13 +12,26 @@ $moderateCyan: hsl(170, 45%, 43%);
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 0 5rem;
+  @media (max-width: 550px) {
+      padding: 0 2rem;
+    }
   max-width: 1440px;
 }
 
 .textColumn,
 .imgColumn {
   width: 50%;
+  @media (max-width: 550px) {
+      width: 100%;
+    }
+}
+
+.textColumn {
+  @media (max-width: 550px) {
+      order: 1;
+    }
 }
 
 .textColumn {
@@ -37,6 +50,36 @@ $moderateCyan: hsl(170, 45%, 43%);
     padding-right: 20%;
     line-height: 1.3rem;
   }
+
+  // @media (max-width: 1015px) {
+  //   padding-right: 2rem;
+  //   h2 {
+  //     font-size: 2rem;
+  //     line-height: 2.6rem;
+  //   }
+  //   p {
+  //     padding-right: 10%;
+  //   }
+  // }
+  // @media (max-width: 894px) {
+  //   padding-right: 1rem;
+  //   h2 {
+  //     font-size: 1.8rem;
+  //     line-height: 2.4rem;
+  //   }
+  //   p {
+  //     padding-right: 5%;
+  //   }
+  // }
+  // @media (max-width: 785px) {
+  //   h2 {
+  //     font-size: 1.6rem;
+  //     line-height: 2.1rem;
+  //   }
+  //   p {
+  //     font-size: 0.85rem;
+  //   }
+  // }
 }
 
 .imgFull {

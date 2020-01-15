@@ -33,6 +33,9 @@ const StyledFooter = styled.footer`
   width: 100%;
   padding: 0 5rem;
   color: #fff;
+  @media (max-width: 550px) {
+      padding: 0 2rem;
+    }
 `
 
 const ImgWrapper = styled.div`
@@ -48,12 +51,61 @@ const StyledImg = styled.img`
 
 const StyledListsWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 `
 const StyledList = styled.ul`
   list-style-type: none;
   width: 25%;
-  display: inline-block;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+    margin-top: 2rem;
+    padding-left: 3rem;
+  
+  :last-child {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  :first-child {
+    padding-left: 0;
+  }
+
+  a {
+    margin-top: 0;
+  }
+
+  @media (max-width: 960px) {
+    width: 33%;
+    align-items: center;
+    padding-left: 0;
+    :last-child {
+      margin-top: 3rem;
+      padding-left: 0;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 770px) {
+    width: 100%;
+    margin-top: 2.5rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+    ::before {
+      content: '';
+      position: absolute;
+      top: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2rem;
+      height: 2px;
+      background-color: white;
+    }
+    :last-child::before {
+      display: none;
+    }
+  }
+  
 `
 
 const StyledListItem = styled.li`
@@ -80,6 +132,10 @@ const StyledListItem = styled.li`
       transform: scaleX(1);
     }
   }
+
+  @media (max-width: 770px) {
+    font-size: 1.1rem;
+  }
 `
 
 const StyledIcon = styled.img`
@@ -96,6 +152,11 @@ const SocialIcon = styled(StyledIcon)`
   transition: transform .15s ease-in-out;  
   :hover {
     transform: scale(1.03);
+  }
+  margin-right: ${({noMargin}) => noMargin ? '0' : '1.2rem'};
+
+  @media (max-width: 770px) {
+    width: 2.5rem;
   }
 `
 
@@ -168,7 +229,7 @@ const Layout = ({ children }) => {
               <StyledList>
                   <a href=""><SocialIcon src={iconFacebook} /></a>
                   <a href=""><SocialIcon src={iconTwitter} /></a>
-                  <a href=""><SocialIcon src={iconInstagram} /></a>
+                  <a href=""><SocialIcon noMargin src={iconInstagram} /></a>
               </StyledList>
             </StyledListsWrapper>
           </StyledFooter>
