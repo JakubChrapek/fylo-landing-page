@@ -23,15 +23,13 @@ header {
     max-width: 1440px;
     padding: 2.75rem 5rem;
 
-    
-
     img {
       height: 2.8rem;
     }
     @media (max-width: 550px) {
       padding: 1.5rem;
       img {
-        height: 2.4rem;
+        height: 2.2rem;
       }
     }
   }
@@ -57,6 +55,10 @@ header {
         transition: color 0.15s ease-in-out;
         font-size: 0.95rem;
 
+        @media (max-width: 550px) {
+          font-size: 1.1rem;
+        }
+
         &:last-child {
           li {
             padding-right: 0;
@@ -68,9 +70,17 @@ header {
         }
 
         li {
-          padding: 0.8rem 1.5rem;
+          padding: 0.8rem 1.4rem;
+        }
+        @media (max-width: 550px) {
+          li {
+            padding: 0.4rem 1.1rem;
+          }
         }
       }
+    }
+    @media (max-width: 550px) {
+      width: 85%;
     }
   }
 }

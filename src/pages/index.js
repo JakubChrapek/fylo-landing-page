@@ -23,23 +23,9 @@ const GreenLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   position: relative;
-
-  ::before {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: hsl(170, 45%, 43%);
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transform: scaleX(0.2);
-    transform-origin: left;
-    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
-  }
-
-  :hover::before {
-    background-color: hsl(210, 65%, 63%);
-    transform: scaleX(1);
+  @media (max-width: 550px) {
+    margin-top: 3rem;
+    justify-content: center;
   }
 
   .svgIcon {
@@ -55,8 +41,25 @@ const GreenLink = styled(Link)`
 
   .green {
     transition: color 0.2s ease-in-out;
+    position: relative;
     :hover {
       color: hsl(190, 55%, 53%);
+      ::before {
+        background-color: hsl(210, 65%, 63%);
+        transform: scaleX(1);
+      }
+    }
+    ::before {
+      content: "";
+      width: calc(100% + 1.6rem);
+      height: 1px;
+      background-color: hsl(170, 45%, 43%);
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transform: scaleX(0.2);
+      transform-origin: left;
+      transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
     }
   }
 `

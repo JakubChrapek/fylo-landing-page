@@ -17,9 +17,15 @@ const StyledInput = styled.input`
   margin-top: 0;
   height: 100%;
   padding: 0.7rem 0.9rem;
-  border-radius: 2px;
+  border-radius: 5px;
   @media (max-width: 1120px) {
     min-width: 125px;
+  }
+  @media (max-width: 550px) {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1.4rem;
+    margin: 0 1rem;
   }
 `
 
@@ -33,12 +39,17 @@ const StyledEmail = styled(StyledInput)`
   ::placeholder {
     font-size: 0.85rem;
     color: lighten(hsl(238, 22%, 44%), 30%);
+    @media (max-width: 550px) {
+      font-size: 1.4rem;
+      
+    }
   }
 
   :focus {
     color: darken(hsl(238, 22%, 44%), 50%);
     border: 1px solid black;
   }
+
 `
 
 const StyledSubmit = styled(StyledInput)`
@@ -54,6 +65,9 @@ const StyledSubmit = styled(StyledInput)`
     box-shadow: 1px 1px 2px 0px hsl(224, 93%, 58%);
     background-color: hsl(224,93%, 63%);
  }
+ @media (max-width: 550px) {
+  margin-top: 1.5rem;
+}
 `
 export default ({ placeholder, buttonText }) => (
   <StyledFrom>

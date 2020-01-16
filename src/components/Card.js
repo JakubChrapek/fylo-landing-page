@@ -18,6 +18,13 @@ const StyledCard = styled.div`
   background-color: #fff;
   border-radius: 3px;
   box-shadow: 0 0 8px 0 #dedede;
+  @media (max-width: 550px) {
+    width: calc(100% - 4rem);
+    max-width: unset;
+    min-width: unset;
+    margin: 3.5rem 0 0;
+    justify-self: center;
+  }
 `
 
 const StyledCardText = styled.div`
@@ -28,6 +35,10 @@ const StyledCardText = styled.div`
     font-size: 0.75rem;
     letter-spacing: 0.8px;
     line-height: 1.2rem;
+    @media (max-width: 550px) {
+      font-size: 0.8rem;
+      line-height: 1.4rem;
+    }
   }
 `
 
@@ -37,9 +48,12 @@ const StyledTestimonialsContainer = styled.div`
   .testimonials-image {
     width: 12.5%;
     margin-right: 0.5rem;
+    @media (max-width: 550px) {
+      width: 9%;
+      min-width: 25px;
+    }
     img {
       margin-top: 0;
-
       border-radius: 100%;
     }
   }
@@ -56,9 +70,11 @@ const StyledTestimonialsContainer = styled.div`
     .name {
       font-weight: 700;
       font-size: 0.65rem;
+      line-height: 1rem;
     }
     .position {
       font-size: 0.55rem;
+      line-height: 1rem;
     }
   }
 `

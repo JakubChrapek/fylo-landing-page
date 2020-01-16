@@ -15,15 +15,33 @@ const AccessContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 550px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 3rem;
+  }
 `
 const StyledSection = styled.div`
   color: #fff;
   width: 40%;
+
+  @media (max-width: 550px) {
+    width: 100%;
+    p {
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+    }
+  }
 `
 
 const H2 = styled.h2`
   font-size: 2rem;
   font-family: "Open Sans" "Roboto" "Montserrat" sans-serif;
+  @media (max-width: 550px) {
+    font-size: 1.4rem;
+    text-align: center;
+  }
 `
 
 const StyledInput = styled.input`
