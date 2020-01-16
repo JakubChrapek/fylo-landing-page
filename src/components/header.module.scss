@@ -18,16 +18,21 @@ header {
   & > div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     max-width: 1440px;
     padding: 2.75rem 5rem;
 
-    @media (max-width: 550px) {
-      padding: 2rem;
-    }
+    
 
     img {
       height: 2.8rem;
+    }
+    @media (max-width: 550px) {
+      padding: 1.5rem;
+      img {
+        height: 2.4rem;
+      }
     }
   }
 
