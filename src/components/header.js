@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/logo.svg"
+import "./header.module.scss"
 
 const SiteNav = () => (
   <nav>
