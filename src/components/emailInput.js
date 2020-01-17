@@ -9,6 +9,11 @@ const StyledFrom = styled.form`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 770px) {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 `
 
 const StyledInput = styled.input`
@@ -21,7 +26,7 @@ const StyledInput = styled.input`
   @media (max-width: 1120px) {
     min-width: 125px;
   }
-  @media (max-width: 550px) {
+  @media (max-width: 770px) {
     width: 100%;
     padding: 0.8rem 1rem;
     font-size: 1.4rem;
@@ -39,7 +44,7 @@ const StyledEmail = styled(StyledInput)`
   ::placeholder {
     font-size: 0.85rem;
     color: lighten(hsl(238, 22%, 44%), 30%);
-    @media (max-width: 550px) {
+    @media (max-width: 770px) {
       font-size: 1.4rem;
       
     }
@@ -65,8 +70,8 @@ const StyledSubmit = styled(StyledInput)`
     box-shadow: 1px 1px 2px 0px hsl(224, 93%, 58%);
     background-color: hsl(224,93%, 63%);
  }
- @media (max-width: 550px) {
-  margin-top: 1.5rem;
+ @media (max-width: 946px) {
+  margin-top: 1rem;
 }
 `
 export default ({ placeholder, buttonText }) => (

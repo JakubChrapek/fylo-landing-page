@@ -14,7 +14,7 @@ $moderateCyan: hsl(170, 45%, 43%);
   align-items: center;
   flex-wrap: wrap;
   padding: 0 5rem;
-  @media (max-width: 550px) {
+  @media (max-width: 770px) {
       padding: 0 2rem;
     }
   max-width: 1440px;
@@ -23,7 +23,7 @@ $moderateCyan: hsl(170, 45%, 43%);
 .textColumn,
 .imgColumn {
   width: 50%;
-  @media (max-width: 550px) {
+  @media (max-width: 770px) {
     margin-top: 6rem;
     width: 100%;
     }
@@ -46,7 +46,7 @@ $moderateCyan: hsl(170, 45%, 43%);
     line-height: 1.3rem;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 770px) {
     padding-right: 0;
     margin-top: 3.5rem;
     order: 1;
@@ -92,8 +92,9 @@ $moderateCyan: hsl(170, 45%, 43%);
     width: 40%;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 770px) {
     background-image: url("../images/bg-curve-mobile.svg");
+    padding-bottom: 75px;
     .textColumn, .imgColumn {
       width: 100%;
     }

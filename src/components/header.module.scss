@@ -32,6 +32,11 @@ header {
         height: 2.2rem;
       }
     }
+    @media (max-width: 340px) {
+          img {
+            height: 1.6rem;
+          }
+        }
   }
 
   nav {
@@ -75,6 +80,11 @@ header {
         @media (max-width: 550px) {
           li {
             padding: 0.4rem 1.1rem;
+          }
+        }
+        @media (max-width: 340px) {
+          li {
+            padding: 0.4rem;
           }
         }
       }

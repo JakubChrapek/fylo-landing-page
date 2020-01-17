@@ -8,6 +8,9 @@ const AccessWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 6rem 0;
+  @media (max-width: 550px) {
+    padding: 4.5rem 0 6rem;
+  }
 `
 const AccessContainer = styled.div`
   padding: 0 5rem;
@@ -27,10 +30,20 @@ const StyledSection = styled.div`
 
   @media (max-width: 550px) {
     width: 100%;
+    form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
     p {
+      margin-top: 1.75rem;
+      margin-bottom: 1rem;
       text-align: center;
       font-size: 1.1rem;
-      line-height: 1.5rem;
+      letter-spacing: 0.5px;
+      line-height: 1.8rem;
     }
   }
 `
@@ -51,13 +64,13 @@ const StyledInput = styled.input`
   min-width: 11rem;
   padding: 0.85rem 0.9rem;
   border-radius: 5px;
-  box-shadow: 2px 2px 4px 0px hsl(233, 82%, 25%);
+  box-shadow: 0 10px 20px -15px hsl(233, 82%, 25%);
   transition: box-shadow 0.2s ease-in-out;
 
   :hover,
   :active,
   :focus {
-    box-shadow: 1px 1px 1px 0px hsl(233, 82%, 25%);
+    box-shadow: 0 10px 20px -10px hsl(233, 82%, 25%);
   }
 `
 const EmailInput = styled(StyledInput)`
@@ -72,6 +85,10 @@ const EmailInput = styled(StyledInput)`
     color: darken(hsl(238, 22%, 44%), 50%);
     border: 1px solid black;
   }
+
+  @media (max-width: 550px) {
+    width: 80%;
+  }
 `
 
 const SubmitInput = styled(StyledInput)`
@@ -85,6 +102,9 @@ const SubmitInput = styled(StyledInput)`
   box-shadow: 1px 1px 4px 0px darken(hsl(224, 93%, 58%), 70%);
   transition: box-shadow 0.2s ease-in-out;
   cursor: pointer;
+  @media (max-width: 550px) {
+    width: 80%;
+  }
 `
 export default () => (
   <AccessWrapper>

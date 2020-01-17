@@ -61,6 +61,9 @@ const GreenLink = styled(Link)`
       transform-origin: left;
       transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
     }
+    @media (max-width: 550px) {
+      font-size: 1rem;
+    }
   }
 `
 
