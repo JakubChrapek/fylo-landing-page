@@ -68,7 +68,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Section
-      title="All your files in one secure location, accessible anywhere."
+      title="All your files in one secure location, accessible anywhere"
       img={illustration1}
     >
       <p>
