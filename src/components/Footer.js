@@ -32,8 +32,16 @@ const StyledFooter = styled.footer`
 
 const ImgWrapper = styled.div`
   width: 100%;
-  display: block;
+  display: flex;
+  justify-content: flex-start;
   margin-top: 0;
+  @media (max-width: 770px) {
+    justify-content: center;
+    
+  }
+  @media (max-width: 550px) {
+    justify-content: flex-start;
+  }
 `
 
 const StyledImg = styled.img`
@@ -79,8 +87,7 @@ const StyledList = styled.ul`
       width: 100%;
       justify-content: center;
     }
-
-    @media (max-width: 770px) {
+    @media (max-width: 550px) {
       align-items: flex-start;
 
     }
@@ -148,6 +155,8 @@ const SocialIcon = styled(StyledIcon)`
   border-radius: 100%;
   width: 2rem;
   padding: 0.4rem;
+  margin-right: ${({noMargin}) => noMargin ? '0' : '1.5rem'};
+
   margin-top: 0;
   transition: transform .15s ease-in-out;  
   :hover {
@@ -209,9 +218,9 @@ export default () => (
                 </StyledListItem>
               </StyledList>
               <StyledList>
-                  <a href=""><SocialIcon src={iconFacebook} /></a>
-                  <a href=""><SocialIcon src={iconTwitter} /></a>
-                  <a href=""><SocialIcon noMargin src={iconInstagram} /></a>
+                  <a href="https://facebook.com/kryptonum"><SocialIcon src={iconFacebook} /></a>
+                  <a href="https://twitter.com"><SocialIcon src={iconTwitter} /></a>
+                  <a href="https://instagram.com/kryptonum.studio"><SocialIcon noMargin src={iconInstagram} /></a>
               </StyledList>
             </StyledListsWrapper>
           </StyledFooter>

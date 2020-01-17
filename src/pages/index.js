@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Section from "../components/section-two-columns"
 import EmailInput from "../components/emailInput"
@@ -12,8 +11,6 @@ import Access from "../components/Access"
 
 import illustration1 from "../images/illustration-1.svg"
 import illustration2 from "../images/illustration-2.svg"
-import bgCurveDesktop from "../images/bg-curve-desktop.svg"
-import bgCurveMobile from "../images/bg-curve-mobile.svg"
 import greenArrow from "../images/icon-arrow.svg"
 
 const GreenLink = styled(Link)`
@@ -99,7 +96,7 @@ const IndexPage = () => (
       </p>
       <GreenLink to="/">
         <span className="green">See how Fylo works</span>
-        <img className="svgIcon" src={greenArrow} />
+        <img className="svgIcon" src={greenArrow} alt="green arrow"/>
       </GreenLink>
       <Card></Card>
     </Section>

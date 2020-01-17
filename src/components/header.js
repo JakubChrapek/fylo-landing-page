@@ -2,8 +2,6 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/logo.svg"
-import layoutStyles from "./layout.module.scss"
-import headerStyles from "./header.module.scss"
 
 const SiteNav = () => (
   <nav>
@@ -23,7 +21,7 @@ const SiteNav = () => (
 const Header = () => (
   <header>
     <div>
-      <img src={logo} />
+      <img src={logo} alt="Fylo logo"/>
       <SiteNav />
     </div>
   </header>

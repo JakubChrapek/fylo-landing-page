@@ -8,7 +8,7 @@ const AccessWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 6rem 0;
-  @media (max-width: 550px) {
+  @media (max-width: 770px) {
     padding: 4.5rem 0 6rem;
   }
 `
@@ -18,7 +18,7 @@ const AccessContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 550px) {
+  @media (max-width: 770px) {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 0 3rem;
@@ -26,9 +26,9 @@ const AccessContainer = styled.div`
 `
 const StyledSection = styled.div`
   color: #fff;
-  width: 40%;
+  width: 45%;
 
-  @media (max-width: 550px) {
+  @media (max-width: 770px) {
     width: 100%;
     form {
       display: flex;
@@ -51,7 +51,7 @@ const StyledSection = styled.div`
 const H2 = styled.h2`
   font-size: 2rem;
   font-family: "Open Sans" "Roboto" "Montserrat" sans-serif;
-  @media (max-width: 550px) {
+  @media (max-width: 770px) {
     font-size: 1.4rem;
     text-align: center;
   }
@@ -86,7 +86,7 @@ const EmailInput = styled(StyledInput)`
     border: 1px solid black;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 770px) {
     width: 80%;
   }
 `
@@ -102,7 +102,7 @@ const SubmitInput = styled(StyledInput)`
   box-shadow: 1px 1px 4px 0px darken(hsl(224, 93%, 58%), 70%);
   transition: box-shadow 0.2s ease-in-out;
   cursor: pointer;
-  @media (max-width: 550px) {
+  @media (max-width: 770px) {
     width: 80%;
   }
 `
