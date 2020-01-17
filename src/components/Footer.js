@@ -218,9 +218,9 @@ export default () => (
                 </StyledListItem>
               </StyledList>
               <StyledList>
-                  <a href="https://facebook.com/kryptonum"><SocialIcon src={iconFacebook} /></a>
-                  <a href="https://twitter.com"><SocialIcon src={iconTwitter} /></a>
-                  <a href="https://instagram.com/kryptonum.studio"><SocialIcon noMargin src={iconInstagram} /></a>
+                  <a href="https://facebook.com/kryptonum"><SocialIcon src={iconFacebook} alt="facebook.com/kryptonum"/></a>
+                  <a href="https://twitter.com"><SocialIcon src={iconTwitter} alt="twitter icon"/></a>
+                  <a href="https://instagram.com/kryptonum.studio"><SocialIcon noMargin src={iconInstagram} alt="instagram.com/kryptonum.studio"/></a>
               </StyledList>
             </StyledListsWrapper>
           </StyledFooter>

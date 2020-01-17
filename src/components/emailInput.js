@@ -76,7 +76,7 @@ const StyledSubmit = styled(StyledInput)`
 `
 export default ({ placeholder, buttonText }) => (
   <StyledFrom>
-    <StyledEmail type="email" name="user_email" placeholder={placeholder} />
+    <StyledEmail type="email" name="userEmail" placeholder={placeholder} />
     <StyledSubmit type="submit" value={buttonText} />
   </StyledFrom>
 )
