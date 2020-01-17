@@ -95,7 +95,7 @@ const IndexPage = () => (
         live collaboration. No email attachments required!
       </p>
       <GreenLink to="/">
-        <span className="green">See how Fylo works</span>
+        <span className="green">See How Fylo works</span>
         <img className="svgIcon" src={greenArrow} alt="green arrow"/>
       </GreenLink>
       <Card></Card>
