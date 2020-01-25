@@ -1,5 +1,5 @@
-import React from 'react'
-import {Link} from 'gatsby'
+import React from "react"
+import { Link } from "gatsby"
 import logo from "../images/logo.svg"
 import iconPhone from "../images/icon-phone.svg"
 import iconMail from "../images/icon-email.svg"
@@ -26,8 +26,8 @@ const StyledFooter = styled.footer`
   padding: 0 5rem;
   color: #fff;
   @media (max-width: 550px) {
-      padding: 0 3rem;
-    }
+    padding: 0 3rem;
+  }
 `
 
 const ImgWrapper = styled.div`
@@ -37,7 +37,6 @@ const ImgWrapper = styled.div`
   margin-top: 0;
   @media (max-width: 770px) {
     justify-content: center;
-    
   }
   @media (max-width: 550px) {
     justify-content: flex-start;
@@ -46,10 +45,10 @@ const ImgWrapper = styled.div`
 
 const StyledImg = styled.img`
   width: 10rem;
-
-    @media (max-width: 770px) {
-      width: 15rem;
-    }
+  filter: brightness(0) invert(1);
+  @media (max-width: 770px) {
+    width: 15rem;
+  }
 `
 
 const StyledListsWrapper = styled.div`
@@ -62,9 +61,9 @@ const StyledList = styled.ul`
   width: 25%;
   display: flex;
   flex-direction: column;
-    margin-top: 2rem;
-    padding-left: 3rem;
-  
+  margin-top: 2rem;
+  padding-left: 3rem;
+
   :last-child {
     align-items: flex-start;
     flex-direction: row;
@@ -87,20 +86,16 @@ const StyledList = styled.ul`
       width: 100%;
       justify-content: center;
     }
-    @media (max-width: 550px) {
-      align-items: flex-start;
-
-    }
   }
-
+  @media (max-width: 550px) {
+    align-items: flex-start;
+  }
   @media (max-width: 770px) {
     width: 100%;
     margin-top: 2.5rem;
     position: relative;
     margin-bottom: 1.5rem;
-    
   }
-  
 `
 
 const StyledListItem = styled.li`
@@ -128,12 +123,12 @@ const StyledListItem = styled.li`
     }
     @media (max-width: 770px) {
       display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    span {
-      margin-top: 0;
-    }
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      span {
+        margin-top: 0;
+      }
     }
   }
 
@@ -155,74 +150,82 @@ const SocialIcon = styled(StyledIcon)`
   border-radius: 100%;
   width: 2rem;
   padding: 0.4rem;
-  margin-right: ${({noMargin}) => noMargin ? '0' : '1.5rem'};
+  margin-right: ${({ noMargin }) => (noMargin ? "0" : "1.5rem")};
 
   margin-top: 0;
-  transition: transform .15s ease-in-out;  
+  transition: transform 0.15s ease-in-out;
   :hover {
     transform: scale(1.03);
   }
 
   @media (max-width: 770px) {
     width: 2rem;
-      margin-right: ${({noMargin}) => noMargin ? '0' : '0.8rem'};
-
+    margin-right: ${({ noMargin }) => (noMargin ? "0" : "0.8rem")};
   }
 `
 
-
 export default () => (
-<StyledWrapper>
-          <StyledFooter>
-            <ImgWrapper>
-              <StyledImg src={logo} alt="Fylo" />
-            </ImgWrapper>
-            <StyledListsWrapper>
-              <StyledList>
-                <StyledListItem>
-                  <a href="tel:+15431234567">
-                    <StyledIcon src={iconPhone} />
-                    <span>Phone: +1-543-123-4567</span>
-                  </a>
-                </StyledListItem>
-                <StyledListItem>
-                  <a href="mailto:example@fylo.com">
-                    <StyledIcon src={iconMail} />
-                    <span>example@fylo.com</span>
-                  </a>
-                </StyledListItem>
-              </StyledList>
-              <StyledList>
-                <StyledListItem>
-                  <Link to="/">About Us</Link>
-                </StyledListItem>
-                <StyledListItem>
-                  <Link to="/">Jobs</Link>
-                </StyledListItem>
-                <StyledListItem>
-                  <Link to="/">Press</Link>
-                </StyledListItem>
-                <StyledListItem>
-                  <Link to="/">Blog</Link>
-                </StyledListItem>
-              </StyledList>
-              <StyledList>
-                <StyledListItem>
-                  <Link to="/">Contact Us</Link>
-                </StyledListItem>
-                <StyledListItem>
-                  <Link to="/">Terms</Link>
-                </StyledListItem>
-                <StyledListItem>
-                  <Link to="/">Privacy</Link>
-                </StyledListItem>
-              </StyledList>
-              <StyledList>
-                  <a href="https://facebook.com/kryptonum"><SocialIcon src={iconFacebook} alt="facebook.com/kryptonum"/></a>
-                  <a href="https://twitter.com"><SocialIcon src={iconTwitter} alt="twitter icon"/></a>
-                  <a href="https://instagram.com/kryptonum.studio"><SocialIcon noMargin src={iconInstagram} alt="instagram.com/kryptonum.studio"/></a>
-              </StyledList>
-            </StyledListsWrapper>
-          </StyledFooter>
-        </StyledWrapper>
+  <StyledWrapper>
+    <StyledFooter>
+      <ImgWrapper>
+        <StyledImg src={logo} alt="Fylo" />
+      </ImgWrapper>
+      <StyledListsWrapper>
+        <StyledList>
+          <StyledListItem>
+            <a href="tel:+15431234567">
+              <StyledIcon src={iconPhone} />
+              <span>Phone: +1-543-123-4567</span>
+            </a>
+          </StyledListItem>
+          <StyledListItem>
+            <a href="mailto:example@fylo.com">
+              <StyledIcon src={iconMail} />
+              <span>example@fylo.com</span>
+            </a>
+          </StyledListItem>
+        </StyledList>
+        <StyledList>
+          <StyledListItem>
+            <Link to="/">About Us</Link>
+          </StyledListItem>
+          <StyledListItem>
+            <Link to="/">Jobs</Link>
+          </StyledListItem>
+          <StyledListItem>
+            <Link to="/">Press</Link>
+          </StyledListItem>
+          <StyledListItem>
+            <Link to="/">Blog</Link>
+          </StyledListItem>
+        </StyledList>
+        <StyledList>
+          <StyledListItem>
+            <Link to="/">Contact Us</Link>
+          </StyledListItem>
+          <StyledListItem>
+            <Link to="/">Terms</Link>
+          </StyledListItem>
+          <StyledListItem>
+            <Link to="/">Privacy</Link>
+          </StyledListItem>
+        </StyledList>
+        <StyledList>
+          <a href="https://facebook.com/kryptonum">
+            <SocialIcon src={iconFacebook} alt="facebook.com/kryptonum" />
+          </a>
+          <a href="https://twitter.com">
+            <SocialIcon src={iconTwitter} alt="twitter icon" />
+          </a>
+          <a href="https://instagram.com/kryptonum.studio">
+            <SocialIcon
+              noMargin
+              src={iconInstagram}
+              alt="instagram.com/kryptonum.studio"
+            />
+          </a>
+        </StyledList>
+      </StyledListsWrapper>
+    </StyledFooter>
+  </StyledWrapper>
 )
